@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker Code Execution</title>
+    <script src="js-sbx.js"></script>
+</head>
+<body>
+    <script>
+        var context = {
+            a: {
+                x: {
+                    data: {
+                        value: 12
+                    }
+                },
+                y: 22
+                },
+
+            b: {
+                x: 22,
+                y: 12
+                },
+        };
+        var code = "return a.x.data.value == 12";
+        sdbxJS = JSSandbox(context, function(data){console.log("Callback: "+ data)});
+        sdbxJS.execute(code);
+    </script>
+</body>
+</html>
