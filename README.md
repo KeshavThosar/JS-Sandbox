@@ -3,7 +3,7 @@ Execute javascript in a sandboxed environment, without exposing the global varia
 You could also pass in custom context for use inside the sandbox
 
 ### Installation
-Simply include the following code in your HTML Document and add copy the __dist/*.js__ files to the desired directory. 
+Include the following code in your HTML Document and copy the __js__ files from __dist__ folder to the desired directory. 
 __Important:__ Make sure that you have the __sbx-worker.js__ file in the same directory as __js-sbx.js__  
 
 ```html
