@@ -46,3 +46,4 @@ Callback: true
 
 ### Todos
  - Try to fix the current limitation
+ - Allow passing custom functions for alert, console, etc
